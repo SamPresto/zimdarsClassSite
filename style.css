@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+nav {
+    background-color: black;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    color: white;
+    margin-left: 1em;
+}
+.logo a {
+   text-decoration: none; 
+   color: white;
+}
+
+
+.container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(206, 206, 206);
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    justify-content: center;
+}
+.rotateBtns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+.nextBtn {
+    padding: .5em 1em;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: .5em;
+    background-color: white;
+}
+.nextBtn:hover {
+    cursor: pointer;
+}
+.prevBtn {
+    padding: .5em 1em;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: .5em;
+    background-color: white;
+}
+.prevBtn:hover {
+    cursor: pointer;
+}
+
+.pfp {
+    border-radius: 50%;
+    margin-top: 2em;
+}

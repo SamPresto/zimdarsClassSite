@@ -4,82 +4,101 @@
 <meta charset="UTF-8">
 <title>Zimdars Class</title>
 </head>
+
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-	margin: 0;
-	background:#6B6B6B;
-}
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background:#e4e4e4;
+    }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
+    .navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    .logo {
+        margin-left: 1em;
+    }
+    .logo img {
+        width: 50px;
+    }
 
-.navbar a {
-  float: right;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 50px;
-  text-decoration: none;
-}
+    .navbar a {
+    float: right;
+    font-size: 16px;
+    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    }
 
-div.logo{float: left;
-	padding: 5.5px;
-	background-color: #333;}
+    div.logo{float: left;
+        background-color: #333;}
 
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
+    .dropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 1em;
+    transition: all .3s ease-in-out;
+    }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+    .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    color: black;
+    background-color: #e4e4e4;;
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+    
+    }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
 
-div.head{text-align: center;
-			font-size: 25px;
-			font-family: gill sans, sans-serif;}
-	
-div.p{text-align: center;
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+
+    div.head{text-align: center;
+                font-size: 25px;
+                font-family: gill sans, sans-serif;
+    }
+
+
+    div.p{text-align: center;
 			color: black;
 			border: 3px solid black;
 			margin-top: 50px;
@@ -90,76 +109,88 @@ div.p{text-align: center;
 			background:#AFAFAF;
 			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	}
-	
-	div.bball{
-		float: left;
-		margin-left: 100px;
-		margin-top: 80px;
+
+
+    div.p{text-align: center;
+			color: black;
+			border: 3px solid black;
+			margin-top: 50px;
+			margin-left: 100px;
+			margin-right: 100px;
+			padding: 5px 10px;
+			line-height: 30px;
+			background:#AFAFAF;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+            margin-bottom: 2em;
 	}
-	
-	div.p2{margin-top: 80px;
-		border: 3px solid black;
-		margin-left: 650px;
-		margin-right: 100px;
-		font-size: 30px;
-		padding: 5px 10px;
-		line-height: 50px;
-		background:#AFAFAF;
-		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-	}
-	div.bottom{
-		text-align: center;
-		font-size: 10px;
-		color: black;
-		margin-top: 30px;
-		line-height: 15px;
-		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";	
-	}
-	
-	
+
+
+
+
+
+    footer {
+        background-color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 120px;
+    }
+    footer a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border: 1px solid white;
+        transition: all .2s ease-in-out;
+    }
+    footer a:hover {
+        background-color: white;
+        color: #333;
+    }
+    .others {
+        padding: 12px 16px;
+    }
+
 	
 
 </style>
+
+
+
 <body>	
-	<div class="logo"><a href="Index.html"><img src="letterz2.png" width="31"></a></div>
-	<div class="navbar">
+
+
 	
-  <a href="index.html">Contact</a>
-  <a href="news.html">News</a>
+	<div class="navbar">
+
+        <div class="logo"><a href="index.html"><img src="imagesHome/letterz.png" width="30"></a></div>
+	
+        <a class="others" href="about/index.html">Contact</a>
+        <a class="others" href="news.html">News</a>
   <div class="dropdown">
     <button class="dropbtn">About 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="Advanced.html">Advanced Web Page Design</a>
-      <a href="Sports.html">Sports and Entertainment Marketing</a>
-      <a href="social.html">Social Media Marketing</a>
+      <a href="social.html">Social</a>
+      <a href="Sports.html">Sports</a>
+      <a href="Advanced.html">Advanced</a>
     </div>
   </div> 
 </div>
-	<div class="head"><h1>Zimdars Class</h1>
-	<img src="5-Benefits-Of-Educational-Technology.webp" width="1000"></div>
+<div class="head"><h1>Zimdars Class</h1>
+	<img src="imagesHome/5-Benefits-Of-Educational-Technology.webp" width="1000"></div>
 	<div class="p"><p>Mr. Zimdars classes offer a world of entertainment. With classes going from Web Page Design to Sports and Entertainment Marketing, you are sure to find the right class. Mr. Zimdars classroom workspace is welcoming and safe. Zimdars will ensure that you feel belonged in his classes with constantly checking up on you and being empathetic. Next time you are enrolling in courses, choose one of the classes that Zimdars teaches. You will not be dissapointed.</p>
 	</div>
 	
-<div class="bball"><img src="biran.jpeg" height="520"></div>
-	<div class="p2">
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra maecenas accumsan lacus. Arcu odio ut sem nulla. Mattis nunc sed blandit libero volutpat sed. Auctor elit sed vulputate mi sit amet. Aliquam etiam erat velit scelerisque. A lacus vestibulum sed arcu. Etiam tempor orci eu.</p>
-</div>
-	
-	<div class="bottom"><p>@Copyright 1800-2023<br>Terms of use | Privacy policy<br>All rights reserved. Presented by Samuel Prestigiacomo and Wyatt Ehrhardt</p></div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+    <footer>
+        <a href="#top">
+            <p>Top &#8593</p>
+        </a>
+    </footer>
 	
 </body>
+
+
 </html>

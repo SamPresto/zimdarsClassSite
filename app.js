@@ -7,24 +7,24 @@ let description = document.querySelector('.description');
 const reviews = [
     {
         id: 1,
-        names: "susan smith",
-        future: "something",
-        pfp: "images/pfp.jpeg",
-        description: "more text",
+        names: "Zimdars",
+        future: "Espn Sports Analyst",
+        pfp: "images/zimmy1.jpg",
+        description: "As a proffesional fútbol player, it's easy to analyze NBA games.",
     },
     {
         id: 2,
-        names: "Henry chop",
-        future: "more things",
-        pfp: "images/pfp.jpeg",
-        description: "a lot more text",
+        names: "Zimmy",
+        future: "The Jim Cramer of Technology and Business",
+        pfp: "images/zimmy2.jpg",
+        description: "Teaches a wide variety of business and technology classes.",
     },
     {
         id: 3,
-        names: "Michelle Trite",
-        future: "some more things",
-        pfp: "images/pfp.jpeg",
-        description: "a lot more text after this",
+        names: "A Man Of Many Names",
+        future: "Retired Premier Leagure Defender",
+        pfp: "images/zimmy3.jpg",
+        description: "It's true, back in the day Whitewater was in the premier league.",
     },
 ];
 
@@ -44,7 +44,7 @@ function currentReview(person) {
     pfp.src = item.pfp;
     names.textContent = item.names;
     future.textContent = item.future;
-    description.textContent = item.textContent;
+    description.textContent = item.description;
 }
 
 

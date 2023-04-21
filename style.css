@@ -2,22 +2,92 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background:#6B6B6B;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
-    background-color: black;
+    .navbar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
     min-height: 70px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-.logo {
+    
+    }
+    .others {
+        padding: 14px 16px;
+    }
+    .logo {
+        margin-left: 1em;
+    }
+    .logo img {
+        width: 50px;
+    }
+
+    .navbar a {
+    float: right;
+    font-size: 16px;
+    
     color: white;
-    margin-left: 1em;
-}
-.logo a {
-   text-decoration: none; 
-   color: white;
-}
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    }
+
+    div.logo{float: left;
+        background-color: #333;}
+
+    .dropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 1em;
+    transition: all .3s ease-in-out;
+    }
+
+    .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    }
+
+    .navbar a:hover, .dropdown:hover .dropbtn {
+    color: black;
+    background-color: #e4e4e4;;
+
+    
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    }
+
+    .dropdown-content a:hover {
+    background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
 
 
 .container {
@@ -35,6 +105,7 @@ nav {
     text-align: center;
     background-color: rgb(206, 206, 206);
     width: 70vw;
+    /* height: 80vh; */
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -69,4 +140,6 @@ nav {
 .pfp {
     border-radius: 50%;
     margin-top: 2em;
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
